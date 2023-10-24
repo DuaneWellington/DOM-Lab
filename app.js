@@ -54,12 +54,23 @@ topMenuEl.classList.add('flex-around')
 // Task 3
 
 // .1
-
-   menuLinks.forEach((link) => {
-    document.createElement('a')
-    return link
+  
+menuLinks.forEach((link) => {
+    const linkEl = document.createElement('a')
+    linkEl.setAttribute('href', link.href)
+    console.log(link)
+    linkEl.innerHTML(link.text)
+    topMenuEl.appendChild(linkEl)
 })
-   const hrefEl = document.createAttribute('a', href)
+    
+    
+    
+    
+    
+    
+    
+
+
 
 //console.log(link)
 
