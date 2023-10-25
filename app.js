@@ -8,18 +8,9 @@ const menuLinks = [
     {text: 'account', href: '/account'},
   ];
 
+  // ---------------------------------------------------------
 
-//   const words = ["one", "two", "three", "four"];
-//   words.forEach((word) => {
-//     console.log(word);
-//     if (word === "two") {
-//       words.shift(); //'one' will delete from array
-//     }
-//   }); // one // two // four
-  
-//   console.log(words); // ['two', 'three', 'four']
-
-
+// DOM Lab Part 1
 // Task 1
 // .0
 const mainEl = document.querySelector("main")
@@ -59,11 +50,13 @@ menuLinks.forEach((link) => {
     const linkEl = document.createElement('a')
     linkEl.setAttribute('href', link.href)
     console.log(link)
-    linkEl.innerHTML(link.text)
+    linkEl.innerHTML = link.text
     topMenuEl.appendChild(linkEl)
 })
-    
-    
+
+// --------------------------------------------------------------
+
+  // Dom Lab Part 2
     
     
     
